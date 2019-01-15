@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<personnel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:noNamespaceSchemaLocation='person.xsd'>
+
+  <!--person id="Big.Boss" note="Planning the work"-->
+  <person id="Boss" employer="private" married="yes">
+    <name>Manager</name>     
+  </person> 
+
+<!--How to ensure unique id for each person ?-->
+  <person id="Boss">    
+    <name>Ramu</name>     
+  </person>  
+     
+</personnel>

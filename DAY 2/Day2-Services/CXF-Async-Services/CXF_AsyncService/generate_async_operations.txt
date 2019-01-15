@@ -1,0 +1,4 @@
+ To generate async opeartions on serer side for asynchronous invocation of services
+wsdl2java -p com.server -b async_binding.xml -impl -server bank.wsdl
+
+

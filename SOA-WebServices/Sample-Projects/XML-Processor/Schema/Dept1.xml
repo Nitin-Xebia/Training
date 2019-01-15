@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Dept1.xsd">
+	<Person>
+		<FirstName>Boss</FirstName>
+		<Grade>9</Grade>
+		<Type>Strong</Type>
+	</Person>
+	<!--Person>
+		<FirstName>Manager</FirstName>
+		<Grade>6</Grade>
+		<Type>SubOrdinate</Type>
+	</Person-->
+</Dept>

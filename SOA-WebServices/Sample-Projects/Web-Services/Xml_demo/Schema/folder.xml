@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+ 
+
+<folder>
+<document>
+   <orderHeader> 
+     <generalComment>A comment</generalComment>
+     <orderInfo>Order specfic comment</orderInfo>
+   </orderHeader>
+</document>
+<document>
+   <invoiceHeader> 
+     <generalComment>A comment</generalComment>
+     <invoiceInfo>Invoice specfic comment</invoiceInfo>
+   </invoiceHeader>
+</document>
+<document>
+   <bidHeader> 
+     <generalComment>A comment</generalComment>
+     <bidInfo>Bid specfic comment</bidInfo>
+   </bidHeader>
+</document>
+</folder>

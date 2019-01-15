@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+ 
+
+<addressBook>
+    <!-- list of contacts -->
+    
+    <contact>
+        <name>John Doe</name>
+        <email>john@data.com</email>
+    </contact>
+    <contact>
+        <name>Bob Smith</name>
+        <email>bSmith@ngo.org</email>
+    </contact>
+    
+    <!-- more extra records -->
+    <contact>
+        <name>Vijay</name>
+        <email>vj@acme.net</email>
+    </contact>
+</addressBook>

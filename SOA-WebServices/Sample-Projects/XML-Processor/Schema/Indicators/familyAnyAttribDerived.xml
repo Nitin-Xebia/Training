@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><persons xmlns="http://www.microsoft.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:SchemaLocation="http://www.microsoft.com/family.xsd
+http://www.currentSpec.com/attribute.xsd">
+<person gender="female">
+  <firstname>Hege</firstname>
+  <lastname>Refsnes</lastname>
+</person>
+<person gender="male">
+   <firstname>Lili</firstname>
+   <lastname>Bregenza</lastname>
+</person></persons>
+
+<!-- uses components from two different schemas; "familyAttrib.xsd" and "familyAttribDerived.xsd"-->

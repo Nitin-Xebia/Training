@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	
+	<User>
+		<Name>Sunil</Name>
+		<Balance>456.56</Balance>
+	</User>
+	
+	<User>
+		<id>Sunil</id>
+		<account-number>456.56</account-number>
+	</User>	
+	
+</Users>

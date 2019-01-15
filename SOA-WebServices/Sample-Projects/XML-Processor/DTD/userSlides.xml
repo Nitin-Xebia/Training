@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+ 
+
+<!DOCTYPE slideshow SYSTEM "slide0.dtd">
+
+<slideshow>
+    <slide>     
+      <title>user &amp; me</title>
+      
+      <item>This is xml intro</item>       
+      <item>XML is defined by IETF</item>
+      <price>
+          344 &lt; 78
+  
+         <![CDATA[2345 < 1000]]>
+</price>
+    </slide>   
+    
+    <slide>     
+      <title>MyData</title>
+      <item>This is java intro</item>       
+      <!--<item>XML is defined by IETF</item>-->
+       <price>2444</price>
+      
+    </slide>       
+</slideshow>

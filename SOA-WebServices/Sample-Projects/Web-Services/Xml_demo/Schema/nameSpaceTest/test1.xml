@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<foo1 xmlns:b="http://www.data.com/bar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="foo.xsd">
+	<b:bar1/>
+	<b:bar2 xmlns:xyz="MyNameSpace">xyz:MyQName</b:bar2>
+</foo1>

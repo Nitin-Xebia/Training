@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:me="CurrentSpace" targetNamespace="MyData">
+
+     <xs:element name="User" type="me:User"/>
+
+      <xs:complexType name="User" >
+		<xs:sequence>
+			<xs:element name = "Email_ID" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="he:User">
+		<xs:sequence>
+			<xs:element name = "loginID" type="xs:string" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DataUser">
+		<xs:sequence>
+			<xs:element name = "UName" type="xs:string" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	 
+</xs:schema>

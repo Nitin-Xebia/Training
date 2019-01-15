@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<Dept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:noNamespaceSchemaLocation='person0.xsd'>
+
+  <person>
+    <ID>Boss</ID>  
+    <email>chief@foo.com</email>
+    <Balance>100</Balance>
+  </person>
+   
+</Dept>

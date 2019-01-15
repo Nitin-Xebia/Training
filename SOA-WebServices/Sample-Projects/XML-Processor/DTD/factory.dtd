@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+ 
+
+<!ELEMENT Factory (Unit,UnitBreak)+>
+<!ATTLIST Factory 
+            title    CDATA    #REQUIRED >
+
+<!ELEMENT Unit ANY >
+
+<!ELEMENT UnitBreak EMPTY >
+
+<!ATTLIST Unit type   CDATA   #REQUIRED >
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT training (#PCDATA)>
+
+<!ENTITY   % slogan "#PCDATA"> <!-- Make it export-->
+ 
+<!ELEMENT Transport (#PCDATA)>
+<!ELEMENT Paragraph (#PCDATA|Line|Letter|Word)*>
+<!ELEMENT Line (#PCDATA)>
+<!ELEMENT Letter (#PCDATA)>
+<!ELEMENT Word   (#PCDATA)>
+<!ELEMENT caption (#PCDATA)>
+
+
+
+ 
+ 
+
+ 

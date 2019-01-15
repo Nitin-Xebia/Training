@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="start.xsl" type="text/xsl"?>
+
+<PopulationChange segment="Top 3">
+ <State>
+  <Name>California</Name>
+  <Population>35116033</Population>
+  <Rank>1</Rank>
+  <Increase>515570</Increase>
+  <PercentChange>1.5</PercentChange> 
+ </State>
+ <State>
+  <Name>Texas</Name>
+  <Population>21779893</Population>
+  <Rank>2</Rank>
+  <Increase>408910</Increase>
+  <PercentChange>1.9</PercentChange> 
+ </State>
+ <State>
+  <Name>New York</Name>
+  <Population>19157532</Population>
+  <Rank>3</Rank>
+  <Budget>Fifty Crore</Budget>
+  <Increase>73182</Increase>
+  <PercentChange>0.4</PercentChange> 
+ </State>
+</PopulationChange>

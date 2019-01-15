@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<!-- Slides with a error -->
+
+<!DOCTYPE slideshow SYSTEM "slide2.dtd">  
+ 
+
+<slideshow 
+    show="My Slide Show"
+    date="Date of publication"
+    author="Yours Truly"
+    >
+
+    <!-- TITLE SLIDE -->
+    <slide type="all">
+      <title>Wake up to Error!</title>
+    </slide>
+
+    <!-- OVERVIEW -->
+    <slide type="all">
+      <title>Overview</title>
+      <item>Why <em>Widgets</em> are great</item>       
+      <item>Who buys Widgets?</item>
+    </slide>
+
+</slideshow>

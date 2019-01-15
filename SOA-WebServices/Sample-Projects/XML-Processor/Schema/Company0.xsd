@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	targetNamespace="http://server.com/user" xmlns:dns="http://server.com/user">
+	<xs:element name="Company">
+
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Address">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="City" type="xs:string" />
+							<xs:element name="PinCode" type="xs:positiveInteger" />
+							<xs:element name="Street" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Staff" type="xs:integer" />
+				<xs:element name="CEO">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="FirstName" type="xs:string" />
+							<xs:element name="LastName" type="xs:string" />
+							<xs:element name="JoiningDate" type="xs:date" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

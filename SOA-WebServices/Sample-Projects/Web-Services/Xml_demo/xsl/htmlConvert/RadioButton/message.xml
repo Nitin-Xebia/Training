@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<?xml-stylesheet type="text/xsl" href="Push.xsl"?>
+<UserOptions>
+	<option title="email" groupname="message" value="e"/>
+	<option title="fax" groupname="message" value="f" default="true"/>
+	<option title="voicemail" groupname="voice" value="v"/>
+	<option title="cellular" groupname="voice" value="c" default="true"/>
+</UserOptions>

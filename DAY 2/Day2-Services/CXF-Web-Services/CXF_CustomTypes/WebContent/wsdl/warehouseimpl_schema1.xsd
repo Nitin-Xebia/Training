@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://com/">
+  <xs:element name="submitPO" type="tns:submitPO"/>
+  <xs:element name="submitPOResponse" type="tns:submitPOResponse"/>
+  <xs:complexType name="submitPO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:purchaseOrder"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="purchaseOrder">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="itemList" nillable="true" type="tns:item"/>
+      <xs:element minOccurs="0" name="customerNumber" type="xs:string"/>
+      <xs:element minOccurs="0" name="orderNumber" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="item">
+    <xs:sequence>
+      <xs:element name="itemID" type="xs:int"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element name="price" type="xs:float"/>
+      <xs:element name="quantity" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="submitPOResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:shipmentNotice"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="shipmentNotice">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="itemList" nillable="true" type="tns:item"/>
+      <xs:element minOccurs="0" name="customerNumber" type="xs:string"/>
+      <xs:element name="itemMap">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="entry">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="0" name="key" type="xs:anyType"/>
+                  <xs:element minOccurs="0" name="value" type="xs:anyType"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="orderNumber" type="xs:string"/>
+      <xs:element minOccurs="0" name="shipmentNumber" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvalidPOException" type="tns:InvalidPOException"/>
+  <xs:complexType name="InvalidPOException">
+    <xs:sequence>
+      <xs:element name="detail" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

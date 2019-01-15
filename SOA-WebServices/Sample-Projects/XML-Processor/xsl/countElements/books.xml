@@ -1,0 +1,62 @@
+
+<?xml-stylesheet type="text/xsl" href="count.xsl"?>
+
+<books>
+  <book>
+    <name>XML by Example</name>
+    <author>Vinod Khosala</author>
+    <listprice>24.99</listprice>
+    <price>17.49</price>
+    <review>4.5</review>
+    <publish>LPE</publish>
+  </book>
+  <book>
+    <name>Professional XML</name>
+    <author>Wrox Authors</author>
+    <listprice>49.50</listprice>
+    <price>34.99</price>
+    <review>4</review>
+    <publish>SUN</publish>
+  </book>
+  <book>
+    <name>Xml for Dummies</name>
+    <author>Vikram Seth</author>
+    <listprice>340.00</listprice>
+    <price>320.99</price>
+    <review>3.5</review>
+    <publish>SUN</publish>
+  </book>
+  <book>
+    <name>Xml in Action</name>
+    <author>Sushil Gupta</author>
+    <listprice>39.99</listprice>
+    <price>31.99</price>
+    <review>3.5</review>
+    <publish>MS</publish>
+  </book>
+  <book>
+    <name>Xml Design and Implementation</name>
+    <author>DON Bosco</author>
+    <listprice>350.00</listprice>
+    <price>32.99</price>
+    <review>4</review>
+    <publish>Wrox</publish>
+  </book>
+  <book>
+    <name>XML: A Managers Guide</name>
+    <author>Kevin Alone</author>
+    <listprice>34.95</listprice>
+    <price>101.95</price>
+    <review>4.5</review>
+    <publish>Addison-Wesley Pub Co</publish>
+  </book>
+  <book>
+    <name>Xml with Java</name>
+    <author>Mehul Jan</author>
+    <listprice>350.00</listprice>
+    <price>32.99</price>
+    <review>3.5</review>
+    <publish>SUN</publish>
+  </book>
+</books>
+

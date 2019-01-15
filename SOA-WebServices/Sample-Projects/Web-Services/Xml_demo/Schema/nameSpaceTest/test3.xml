@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+ 
+
+<f:foo2 xmlns:f="http://www.data.com/foo" xmlns="">
+	MyQName
+</f:foo2>
+
+<!--Default nameSpace-->

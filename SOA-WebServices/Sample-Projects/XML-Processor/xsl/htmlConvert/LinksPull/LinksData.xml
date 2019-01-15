@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<?xml-stylesheet type="text/xsl" href="Linkspush.xsl"?>
+<links>
+	<link name="XML NonStop" url="http://www.XMLNonStop.com" description="A great place for XML Info"/>
+	<link name="InfoSoft" url="http://www.InfoSoft.com" description="The XML Software company"/>
+	<link name="MyXML" url="http://www.myXML.com" description="One of my favorite resources "/>
+	<link name="XSLtalk" url="http://www.xsltalk.com" description="A resource for advanced xslt topics"/>
+</links>

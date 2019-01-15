@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<personnel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	   xsi:noNamespaceSchemaLocation='Simple.xsd'>
+
+   <User>1234</User>
+   <Number>105</Number>
+   <Grade>116</Grade>
+   <Success>def</Success>  
+
+</personnel>

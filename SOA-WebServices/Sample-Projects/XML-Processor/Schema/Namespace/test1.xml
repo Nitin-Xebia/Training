@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<foo1 xmlns="http://www.example.com/foo" xmlns:b="http://www.example.com/bar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/foo
+C:\Java_Presentation\NEWSER~1\XML_code\jaxp\XMLParser\schemaDemo\Namespace\foo.xsd">
+	<b:bar1/>
+	<b:bar2 xmlns:xyz="someNamespace">xyz:someQName</b:bar2>
+</foo1>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<!--  A SAMPLE set of slides  -->
+
+<!DOCTYPE slideshow SYSTEM "ParamEntity.dtd" [
+  <!ENTITY product  "Car">
+  <!ENTITY products "Cars">    
+  <!ENTITY copyright SYSTEM "copyright.xml">
+]>
+
+<!-- SUBSTITUTIONS WORK IN ATTRIBUTES, TOO -->
+
+<slideshow 
+    caption="&product; Slide Show"
+    date= "Date of publication"
+    author="Yours Truly"
+    >
+
+    <!-- PROCESSING INSTRUCTION -->
+    <?my.presentation.Program - QUERY="exec, tech, all"?>
+
+  <!--colon : not allowed in namespace aware parsing since it comflicts with namespace ref : symbol-->
+    
+    <slide type="all">
+       <title>Wake up to &products;!</title>
+    </slide>
+
+     
+    <slide type="all">
+       <item>&copyright;</item>
+    </slide>
+
+     
+    <slide type="exec">
+      <title>Overview</title>
+      <item>Why <em>&products;</em> are great</item>
+      <item/>
+      <item>Who <em>buys</em> &products;</item>
+	  <!--item>Why <em1>&products;</em1> are used</item-->
+    </slide>
+
+<!--Here <em> tag is refreed from entity dtd-->
+
+   <slide type="tech">
+      <title>Overview</title>
+      <item> 
+	    Here you will see a Caption         
+      </item>
+
+      <item>Who <em>buys</em> &products;</item>
+	  <!--item>Why <em1>&products;</em1> are used</item-->
+	  <MyCaption>The more you learn,the more work you get!</MyCaption>      
+
+    </slide>
+     
+</slideshow>

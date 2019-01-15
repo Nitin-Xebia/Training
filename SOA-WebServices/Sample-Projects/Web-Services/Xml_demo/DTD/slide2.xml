@@ -1,0 +1,76 @@
+<!--?xml version='1.0' encoding='us-ascii'?-->
+
+ 
+
+<!DOCTYPE slideshow SYSTEM "slide2.dtd">  
+ 
+
+ 
+<slideshow 
+    show="Great Tennis Show"  
+    author="Andre & bAgassi"
+    >
+
+    <!-- PROCESSING INSTRUCTION -->
+    <?my.presentation.Program QUERY="play, demo, all"?>
+	<!--Parser specific information -->
+	<!--a colon can conflict with namespace declaration-->
+
+    <!-- Title slide without image and item -->
+    <slide type="data">
+       <title>Wake up to Sampras!</title>
+    </slide>
+
+    <!-- Tennis Overview-->
+    <slide type="all">
+      <title>Tennis Overview</title>
+      <item>
+	      Why the game of 
+		  <item>Tennis </item>
+		   is Great ?
+		 </item>
+      <item/>
+      <item>Who <item>buys</item>Tickets for Wimbeldon ?</item>
+    </slide>
+
+    <slide type="demo">
+      <title>Tennis Forecast</title>
+	  <item>Actual Score</item>
+      <item>Becker Score < predicted!</item>
+      
+      <item>Expected Revenues</item>
+      <item>Total Collection</item>
+    </slide>
+
+
+    <slide type="demo">
+	  <image src = "c:\data\show.gif">
+	  	 <myData>sfhsfsd</myData>
+	  	</image>	   
+      <title>NewYork OpenTennis</title>
+
+      <item>Andre Score > predicted!</item>
+	  <!--using the character Entity Ref-->
+	  <!--Run with EchoParser and see the &gt replaced value-->
+
+      <item>Actual Score</item>       
+      <item>Total Collection</item>
+	  <!--image src = "c:\data\show.gif"/--><!--It cannot be defined here  see the sequence in dtd -->	   
+    </slide>
+
+    <slide type="play">
+      <title>How to play Tennis ?</title>
+      <item>First I start the service</item>
+      <item>Then I try to kick it off</item>
+      <item>Finally, he is won...</item>
+      <item><![CDATA[ScoreBoard:
+                         
+           Becker <--------------------Andre
+               |            <3>        ^
+               | <1>                   |   <1> = lo
+               V                       |   <2> = draw    
+             status--------------------+   <3> = frenzie play
+                            <2>
+      ]]></item>
+    </slide>
+</slideshow>

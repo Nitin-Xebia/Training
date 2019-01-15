@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="AccountService" targetNamespace="http://server.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://server.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://server.com/" schemaLocation="account_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDetails">
+    <wsdl:part name="parameters" element="tns:getDetails">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDetailsResponse">
+    <wsdl:part name="parameters" element="tns:getDetailsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="IAccount">
+    <wsdl:operation name="update">
+      <wsdl:input name="update" message="tns:update">
+    </wsdl:input>
+      <wsdl:output name="updateResponse" message="tns:updateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetails">
+      <wsdl:input name="getDetails" message="tns:getDetails">
+    </wsdl:input>
+      <wsdl:output name="getDetailsResponse" message="tns:getDetailsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AccountServiceSoapBinding" type="tns:IAccount">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="update">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDetails">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getDetails">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDetailsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AccountService">
+    <wsdl:port name="AccountPort" binding="tns:AccountServiceSoapBinding">
+      <soap:address location="http://localhost:8080/Cxf_Blocking_Service/services/AccountPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

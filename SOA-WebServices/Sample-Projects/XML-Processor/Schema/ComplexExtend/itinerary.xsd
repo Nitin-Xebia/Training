@@ -1,0 +1,80 @@
+ 
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	    targetNamespace="http://example.org" 
+            xmlns:e="http://example.org"
+            xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+	    jxb:version="1.0">
+            
+<!-- type derivation hierarchy
+
+             TravelType
+             /     |    \
+     PlaneType AutoType  TrainType
+-->  
+
+<xsd:complexType name="TravelType">  
+  <xsd:sequence>
+    <xsd:element name="origin" type="xsd:string"/>
+    <xsd:element name="destination" type="xsd:string"/>
+  </xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="PlaneType">  
+  <xsd:complexContent>
+    <xsd:extension base="e:TravelType">
+      <xsd:sequence>
+        <xsd:element name="flightNumber" type="xsd:int"/>
+        <xsd:element name="meal" type="xsd:string"/>
+      </xsd:sequence>
+   </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:complexType name="AutoType">   
+  <xsd:complexContent>
+    <xsd:extension base="e:TravelType">
+      <xsd:sequence>
+       <xsd:element name="rentalAgency" type="e:RentalCompany"/>
+       <xsd:element name="ratePerHour" type="xsd:int"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+<xsd:complexType name="TrainType">  
+  <xsd:complexContent>
+    <xsd:extension base="e:TravelType">
+     <xsd:sequence>
+       <xsd:element name="track" type="xsd:int"/>
+       <xsd:element name="dailyScheduleNumber" type="xsd:int"/>
+     </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+
+<xsd:simpleType name="RentalCompany">
+    <xsd:restriction base="xsd:NCName">
+      <xsd:enumeration value="Avis"/>
+      <xsd:enumeration value="Hertz"/>
+      <xsd:enumeration value="RentAWreck"/>
+    </xsd:restriction>
+</xsd:simpleType>
+
+<!-- Create the substitution group with head element "e:travel". -->
+
+<xsd:element name="travel" type="e:TravelType"/>
+<xsd:element name="plane" type="e:PlaneType" 
+             substitutionGroup="e:travel"/>
+<xsd:element name="auto" type="e:AutoType"
+	     substitutionGroup="e:travel"/>
+<xsd:element name="train" type="e:TrainType"
+	     substitutionGroup="e:travel"/>
+
+<xsd:element name="itinerary">
+  <xsd:complexType> 
+    <xsd:sequence>
+      <xsd:element ref="e:travel" maxOccurs="unbounded"/>
+      <!-- The other stuff for itinerary -->
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+</xsd:schema>

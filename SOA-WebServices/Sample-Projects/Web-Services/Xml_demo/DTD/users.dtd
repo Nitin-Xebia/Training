@@ -1,0 +1,4 @@
+<!ELEMENT UserList (User)>
+<!ELEMENT User (Account)> 
+<!ELEMENT Account (#PCDATA)>
+ 

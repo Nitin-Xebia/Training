@@ -1,0 +1,14 @@
+ 
+
+<!--
+    DTD for a simple "slide0 show".
+-->
+ 
+<!ELEMENT slideshow (slide)*>
+<!ELEMENT slide (title, item*,price)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT item (#PCDATA) >
+<!ELEMENT price (#PCDATA) >
+
+ 

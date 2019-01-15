@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<?xml-stylesheet type="text/xsl" href="pull.xsl"?>
+<customers>
+	<customer CustomerID="Vik34" CompanyName="Tata Motors" ContactTitle="Sales Representative" Address="57.S T Road" City="Pune"/>
+
+	<customer CustomerID="anant" CompanyName="SunGuard" ContactTitle="Owner" Address="34,Lamington Road" City="Mumbai"/>
+
+	<customer CustomerID="sunil" CompanyName="Wipro" ContactTitle="Developer"  Address="120 B T Road" City="Bangalore"/>
+	 
+</customers>

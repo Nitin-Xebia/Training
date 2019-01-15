@@ -1,0 +1,12 @@
+<xs:element name="person">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="firstname" type="xs:string"/>
+      <xs:element name="lastname" type="xs:string"/>
+    </xs:sequence>
+    <xs:anyAttribute/>
+  </xs:complexType>
+</xs:element>
+<!--
+By using the <anyAttribute> element we can add any number of attributes 
+to the "person" element-->

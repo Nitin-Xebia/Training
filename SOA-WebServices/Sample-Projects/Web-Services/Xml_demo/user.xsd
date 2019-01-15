@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/user"
+	xmlns:tns="http://www.example.org/user" elementFormDefault="qualified">
+	<xs:import="company0.xsd"/>
+	<xs:complexType name="Persons">	
+	 <xs:sequence>	   
+	    <xs:element name="id" type="xs:string">
+	    </xs:element> 
+	    
+	     <xs:element name="Boss" type="dns:CEO">
+	    </xs:element> 
+	    
+	    
+	    
+	  
+	   
+	 </xs:sequence>	  
+	  
+	  
+	
+	<!--<xsd:element name="CEO" xmlns:ds="http://server.com/data">
+	  <xsd:complexType>
+	   <xsd:sequence>
+		<xsd:element name="Salary" type="xsd:integer"/>
+		<xsd:element name="car" type="xsd:string"/>
+		<xsd:element name="staff" type="xsd:positiveInteger"/>
+	  </xsd:sequence>
+	 </xsd:complexType>
+	</xsd:element>
+	
+	-->
+	</xs:complexType>
+	 
+	 
+
+</schema>

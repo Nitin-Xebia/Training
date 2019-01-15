@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <!--xsi:noNamespaceSchemaLocation="Company0.xsd"-->
+	<Address>		   
+	   <City>Pune</City>
+	   <PinCode>41011</PinCode>	
+		<Street>Somwar</Street>
+	</Address>
+	<Staff>100</Staff>
+	<CEO>
+		<FirstName>Prakash</FirstName>
+		<LastName>Badhe</LastName>
+		<JoiningDate>2006-04-02</JoiningDate>
+	</CEO>
+</Company>

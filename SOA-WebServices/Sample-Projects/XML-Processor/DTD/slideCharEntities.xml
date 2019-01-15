@@ -1,0 +1,46 @@
+<!--?xml version='1.0' encoding='us-ascii'?-->
+
+ 
+
+<!DOCTYPE slideshow SYSTEM "slide2.dtd">  
+ 
+
+ 
+<slideshow 
+    show="Great Tennis Show"
+    date="Date of publication"
+    author="Andre Agassi"
+    >
+   
+<!--donot pass author attribute and run with EchoParser to see the defualt value of steffy for author displayed-->
+    <slide type="demo">
+      <title>Tennis > It works! as Forecasted</title>
+	   <!--This willnot raise error since it doesnot define opening tag like
+	   like < to contain other items-->
+	  <!--Putting  < will generate error even if the title is of CDATA type
+	  Try putting &lt; here -->
+	  <item>Actual Score</item>
+      <item>Becker Score > predicted!</item>      
+	 
+      <item>Expected Revenues</item>
+      <item>Total Collection</item>
+    </slide>
+
+
+    <slide type="demo">
+	  <image src = "c:\data\show.gif"/>	   
+      <title>NewYork OpenTennis</title>
+
+	  <item>Andre Score &lt; predicted</item>
+
+      <!--item>Andre Score < predicted</item-->
+	  <!--This will raise error -->
+	  <!--using the character Entity Ref-->
+	  <!--Run with EchoParser and see the &gt replaced value-->
+
+      <item>Actual Score</item>       
+      <item>Total Collection</item>
+	  <!--image src = "c:\data\show.gif"/--><!--It cannot be defined here  see the sequence in dtd -->	   
+    </slide>
+ 
+</slideshow>

@@ -1,0 +1,15 @@
+
+<?xml-stylesheet type="text/xsl" href="CallTemplate.xsl"?>
+
+<lesson>
+
+  <warning>
+    <para>Carrying a flammable liquid may cause a fire.</para>
+  </warning>
+
+<caution>
+   <para>Just boiled water is hot.</para>
+</caution>
+</lesson>
+
+

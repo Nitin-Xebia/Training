@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+ 
+<apo:purchaseOrder xmlns:apo="MyData">
+                   
+  <shipTo Country="India">
+    <name>Vijay Kale</name>
+    <street>123 Somwar</street>     
+  </shipTo>
+  <billTo>
+    <name>Bill Gates</name>
+    <street>8 RedMond</street>     
+  </billTo>
+
+  <apo:comment>Hurry, my Customers cannot wait AnyMore</apo:comment>
+
+</apo:purchaseOrder>
+

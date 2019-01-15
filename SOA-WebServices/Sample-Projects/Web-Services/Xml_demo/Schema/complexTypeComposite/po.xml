@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<purchaseOrder orderDate="1999-10-20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="po.xsd">
+	<shipTo country="US">
+		<name>Bill Gates</name>
+		<street>123 Redmonds</street>
+		<city>California</city>
+		<state>WS</state>
+		<zip>12345</zip>
+	</shipTo>
+	<billTo country="US"><!--Can it be  =UK ?-->
+		<name>Robert Smith</name>
+		<street>8 Oak Avenue</street>
+		<city>Cambridge</city>
+		<state>MA</state>
+		<zip>12345</zip>
+	</billTo>
+	<items>
+		<item></item>		 
+		<item ></item> 		 
+	</items>
+</purchaseOrder>

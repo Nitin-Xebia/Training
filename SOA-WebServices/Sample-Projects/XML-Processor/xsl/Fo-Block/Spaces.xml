@@ -1,0 +1,14 @@
+
+<?xml-stylesheet type="text/xsl" href="blockSpace.xsl"?>
+<chapter>
+  <title>Chapter title</title>
+ <section>
+  <title>First section title</title>
+  <para>Section one's first paragraph.</para>
+  <para>Section one's second paragraph.</para>
+</section>
+<section>
+  <title>Second section title</title>
+  <para>Section two's only paragraph.</para>
+</section>
+</chapter>

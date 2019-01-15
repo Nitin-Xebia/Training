@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+ <!-- Steffy is default value for author -->
+
+<!ELEMENT slideshow (slide+)>
+<!ATTLIST slideshow 
+            show    CDATA    #REQUIRED
+            date     CDATA    #IMPLIED
+            author   CDATA    "Steffy"  
+>
+<!ELEMENT slide (image?, title, item*)>
+<!ATTLIST slide 
+            type   (play | demo | all) #IMPLIED
+>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT item (#PCDATA | item)* >
+<!ELEMENT image EMPTY>  
+<!ATTLIST image 
+            graphicSupport    CDATA    #IMPLIED
+            src               CDATA    #REQUIRED
+            type              CDATA    "image/gif"
+>
+
+<!--EMPTY means the element contains neither text nor child elements and even comment tags are not allowed-->

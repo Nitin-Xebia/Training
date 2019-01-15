@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<message>
+  You can use the attribute element to create attributes on the result tree.
+   <Data>
+     This is my Data
+   </Data>
+</message>

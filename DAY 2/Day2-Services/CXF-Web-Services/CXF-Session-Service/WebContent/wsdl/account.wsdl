@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="AccountService" targetNamespace="http://server.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://server.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://server.com/" schemaLocation="account_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="getBalanceResponse">
+    <wsdl:part name="parameters" element="tns:getBalanceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addAmount">
+    <wsdl:part name="parameters" element="tns:addAmount">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addAmountResponse">
+    <wsdl:part name="parameters" element="tns:addAmountResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="withdrawAmount">
+    <wsdl:part name="parameters" element="tns:withdrawAmount">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBalance">
+    <wsdl:part name="parameters" element="tns:getBalance">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="withdrawAmountResponse">
+    <wsdl:part name="parameters" element="tns:withdrawAmountResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Bank">
+    <wsdl:operation name="getBalance">
+      <wsdl:input name="getBalance" message="tns:getBalance">
+    </wsdl:input>
+      <wsdl:output name="getBalanceResponse" message="tns:getBalanceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAmount">
+      <wsdl:input name="addAmount" message="tns:addAmount">
+    </wsdl:input>
+      <wsdl:output name="addAmountResponse" message="tns:addAmountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="withdrawAmount">
+      <wsdl:input name="withdrawAmount" message="tns:withdrawAmount">
+    </wsdl:input>
+      <wsdl:output name="withdrawAmountResponse" message="tns:withdrawAmountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AccountServiceSoapBinding" type="tns:Bank">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBalance">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBalance">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBalanceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAmount">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="addAmount">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addAmountResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="withdrawAmount">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="withdrawAmount">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="withdrawAmountResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AccountService">
+    <wsdl:port name="AccountPort" binding="tns:AccountServiceSoapBinding">
+      <soap:address location="http://localhost:8080/CXF-Session-Service/services/AccountPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

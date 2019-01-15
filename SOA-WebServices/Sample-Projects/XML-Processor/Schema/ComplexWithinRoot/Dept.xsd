@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="Dept">
+		<complexType>
+			<sequence>
+				<element name="Person" minOccurs="1" maxOccurs="3">
+					<complexType>
+						<sequence>
+							<element name="FirstName" type="string"/>
+							<element name="Grade" type="positiveInteger"/>
+							<element name="Type" type="string"/>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+ <!--?xml-stylesheet type="text/xsl" href="peopleCondition.xsl"?-->
+
+<PEOPLE> 
+
+<PERSON> 
+    <NAME>Adolf</NAME> 
+    <ADDRESS>121 Nazi Raod, Berlin, Germany</ADDRESS> 
+    <TEL>(++6396) 531 9090</TEL> 
+    <FAX>(++1121) 531 9090</FAX> 
+    <EMAIL>Hell-Himler@chamber.kill</EMAIL> 
+</PERSON> 
+
+ <PERSON> 
+    <NAME>Mario Puzzo</NAME> 
+    <ADDRESS>911 GodFather Street, Sisily, Italy</ADDRESS> 
+    <TEL>(++002) 12345</TEL> 
+    <FAX>(++452) 783245</FAX> 
+    <EMAIL>godFather@UnderWorld-Italy.org</EMAIL> 
+</PERSON> 
+
+
+<PERSON> 
+    <NAME>Truman</NAME> 
+    <ADDRESS>101 WhiteHouse, dc Road, New York</ADDRESS> 
+    <TEL>(++0011) 111 1230</TEL> 
+    <FAX>(++1156) 111 1010</FAX> 
+    <EMAIL>us@un.org</EMAIL> 
+</PERSON> 
+ 
+</PEOPLE>

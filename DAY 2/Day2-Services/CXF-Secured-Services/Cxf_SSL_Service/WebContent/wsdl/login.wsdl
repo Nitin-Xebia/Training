@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Login" targetNamespace="http://server.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://server.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://server.com/" schemaLocation="login_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="processLoginResponse">
+    <wsdl:part name="parameters" element="tns:processLoginResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processLogin">
+    <wsdl:part name="parameters" element="tns:processLogin">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processDataResponse">
+    <wsdl:part name="parameters" element="tns:processDataResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processData">
+    <wsdl:part name="parameters" element="tns:processData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Login">
+    <wsdl:operation name="processData">
+      <wsdl:input name="processData" message="tns:processData">
+    </wsdl:input>
+      <wsdl:output name="processDataResponse" message="tns:processDataResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processLogin">
+      <wsdl:input name="processLogin" message="tns:processLogin">
+    </wsdl:input>
+      <wsdl:output name="processLoginResponse" message="tns:processLoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoginSoapBinding" type="tns:Login">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="processData">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="processData">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="processDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processLogin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="processLogin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="processLoginResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Login">
+    <wsdl:port name="LoginPort" binding="tns:LoginSoapBinding">
+      <soap:address location="http://localhost:8080/Cxf_SSL_Service/services/LoginPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+
+<?xml version='1.0'?>
+<!--Without version attribute some browsers(ie 6.0) may not display it-->
+<?xml-stylesheet type="text/xsl" href="recursive.xsl"?>
+<doc>
+<para>
+  This is a  
+      <strong>Strong Test</strong>
+      <strong>Nested 
+	       <strong>
+		     Strong Test
+		   </strong>
+	  </strong>
+</para>
+</doc>

@@ -1,0 +1,10 @@
+ 
+
+<!--FooBar zip="01803"-->
+<FooBar><!--Default zip-->
+   <foo>34</foo>
+   <!--phoneNumber>781-555-1212</phoneNumber-->
+   <speedDial>44</speedDial>
+   <value>5</value>
+</FooBar>
+

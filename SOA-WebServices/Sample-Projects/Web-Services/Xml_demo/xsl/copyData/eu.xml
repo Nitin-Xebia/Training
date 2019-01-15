@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <?xml-stylesheet href="copy.xsl" type="text/xsl"?>
+
+<eu>
+ <member>
+  <state>Austria</state>
+  <state founding="yes">Belgium</state>
+  <state>Denmark</state>
+  <state>Finland</state>
+  <state founding="yes">France</state>
+  <state founding="yes">Germany</state>
+  <state>Greece</state>
+  <state>Ireland</state>
+  <state founding="yes">Italy</state>
+  <state founding="yes">Luxembourg</state>
+  <state founding="yes">The Netherlands</state>
+  <state>Portugal</state>
+  <state>Spain</state>
+  <state>Sweden</state>
+  <state>United Kingdom</state>
+ </member>
+ <candidate>
+  <state>Bulgaria</state>
+  <state>Cyprus</state>
+  <state>Czech Republic</state>
+  <state>Estonia</state>
+  <state>Hungary</state>
+  <state>Latvia</state>
+  <state>Lithuania</state>
+  <state>Malta</state>
+  <state>Poland</state>
+  <state>Romania</state>
+  <state>Slovakia</state>
+  <state>Slovenia</state>
+  <state>Turkey</state>
+ </candidate>
+</eu>

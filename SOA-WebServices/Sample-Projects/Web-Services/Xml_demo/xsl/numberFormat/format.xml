@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="format.xsl" type="text/xsl"?>
+
+<format>
+ <number>100</number>
+ <number>1000</number>
+ <number>10000</number>
+ <number>100000</number>
+ <number>1000000</number>
+ <number>10000000</number>
+ <number>100000000</number>
+ <number>1000000000</number>
+</format>

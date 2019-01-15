@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="namespace.xsl"?>
+
+<message>
+  You can use the attribute element to create attributes on the result tree.
+</message>

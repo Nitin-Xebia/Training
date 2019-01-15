@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<personnel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:noNamespaceSchemaLocation='personal.xsd'>
+
+  <person>
+    <name>
+	   <family>Boss</family> 
+	   <given>Big</given>
+	 </name>
+    <email>chief@foo.com</email>    
+  </person> 
+
+  <person>    
+    <name>
+		 <family>
+		   Worker
+		 </family>
+		 <given>
+		  One
+		  </given>
+	</name>     
+  </person>
+
+  <person>
+    <name><family>Worker</family> <given>Two</given></name>
+    <!--email>two@foo.com</email-->    
+  </person>    
+</personnel>

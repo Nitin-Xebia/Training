@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+ 
+
+<!ELEMENT slideshow (slide+)>
+<!ATTLIST slideshow 
+            caption    CDATA    #REQUIRED
+            date       CDATA    #IMPLIED
+            author     CDATA    "unknown"
+>
+<!ELEMENT slide (image?, title?, (MyCaption|item)*)>
+<!ATTLIST slide 
+            type   (tech | exec | all) #IMPLIED
+>
+
+ <!--The entities declared here are parameter entities-->
+
+
+<!ENTITY % xtag SYSTEM "EntityDefinition.dtd">
+  %xtag;
+
+  
+<!-- '%' char is used instead of '&' char to refer to borrowed entities-->
+
+
+<!ENTITY % Data SYSTEM "factory.dtd">
+  %Data;
+
+<!--ELEMENT title (%inline;)*-->
+<!--To avoid the conflict with existing title-->  
+
+
+
+<!ELEMENT item (%inline; |  item)* > <!--imported entirty from factyory.dtd-->
+
+<!ELEMENT MyCaption (%slogan; | item )* ><!--imported entity from factory.dtd-->
+
+ 
+<!ELEMENT image EMPTY>
+<!ATTLIST image 
+            alt    CDATA    #IMPLIED
+            src    CDATA    #REQUIRED
+            type   CDATA    "image/gif"
+>
+
+

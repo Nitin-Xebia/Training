@@ -1,0 +1,37 @@
+<!--?xml version='1.0' encoding='us-ascii'?-->
+
+ 
+
+<!DOCTYPE slideshow SYSTEM "slide1.dtd">  
+
+<!--DOCTYPE slideshow SYSTEM "C:\Java_Presentation\new Server_program_present\XML_code\jaxp\data\slide1.dtd"-->
+
+<!--DOCTYPE slideshow SYSTEM "http://www.vishwasoft.com/xmldata/dtd/slide1.dtd"--> <!--SYSTEM can specify url-->
+
+
+
+<!--DOCTYPE slideshow PUBLIC "http://www.vishwasoft.com/registry/slide1" "slide1.dtd"--> 
+
+<!--case sensitive try public instead of PUBLIC -->
+
+<!--PUBLIC Specifies location independent dtd from registry where the actual address of dtd is stored-->  
+
+
+<!--Try without any DOCTYPE declaration -->
+
+<slideshow>
+    <slide>     
+      <title>Overview</title>
+      <item>This is xml intro</item>       
+      <item>XML is defined by IETF</item>
+    </slide>
+    <slide>     
+      <title>XML Usage</title>
+      <item>XML is used to define data</item>       
+      <item>XML is is used to send data information
+	      <item>XML is powerfull</item> 
+		  <item>XML is for dataDefintiion</item>  
+		  XML is realy cool..
+	  </item>
+    </slide>
+</slideshow>

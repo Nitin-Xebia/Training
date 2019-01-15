@@ -1,0 +1,24 @@
+
+<?xml-stylesheet type="text/xsl" href="sort.xsl"?>
+
+<doc>
+ <para>Here's a table of sales:</para>
+<table>
+  <row>
+    <cell>300</cell>
+	<cell>Used Widgets</cell>
+  </row>
+ <row>
+  <cell>2400</cell>
+  <cell>Widgets in Design</cell>
+ </row>
+<row>
+  <cell>10000</cell>
+  <cell>Dummy Widgets</cell>
+ </row>
+<row>
+  <cell>101</cell>
+  <cell>The cells used for a Dead Widget</cell>
+ </row>
+</table>
+</doc>

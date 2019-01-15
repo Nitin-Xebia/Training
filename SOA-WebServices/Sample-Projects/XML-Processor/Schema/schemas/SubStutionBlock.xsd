@@ -1,0 +1,21 @@
+<xs:element name="name" type="xs:string" block="substitution"/>
+<xs:element name="navn" substitutionGroup="name"/><xs:complexType name="custinfo">
+  <xs:sequence>
+    <xs:element ref="name"/>
+  </xs:sequence>
+</xs:complexType><xs:element name="customer" type="custinfo" block="substitution"/>
+<xs:element name="kunde" substitutionGroup="customer"/>
+
+
+A valid XML document (according to the schema above) 
+
+<customer>
+  <name>John Smith</name>
+</customer> 
+
+BUT THIS IS NO LONGER VALID:
+
+<kunde>
+  <navn>John Smith</navn>
+</kunde> 
+

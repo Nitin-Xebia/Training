@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="count.xsl" type="text/xsl"?>
+
+<outline>
+ <section title="Indian coin denominations">
+  <item>Ten Paise</item>
+  <item>Fifty Paise</item>
+  <item>One Rupee</item>
+  <item>Two Rupee</item>
+  <item>Five Rupee</item>   
+ </section>
+ <section title="Persons on coins">
+  <item>Abraham Lincoln (cent)</item>
+  <item>Gandhi</item>
+  <item>Shivaji</item>
+  <item>Dnyaneshwar</item>   
+ </section>  
+  
+</outline>

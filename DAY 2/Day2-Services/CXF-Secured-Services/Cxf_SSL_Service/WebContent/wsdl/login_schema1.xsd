@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://server.com/" elementFormDefault="unqualified" targetNamespace="http://server.com/" version="1.0">
+<xs:element name="processData" type="tns:processData"/>
+<xs:element name="processDataResponse" type="tns:processDataResponse"/>
+<xs:element name="processLogin" type="tns:processLogin"/>
+<xs:element name="processLoginResponse" type="tns:processLoginResponse"/>
+<xs:complexType name="processData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element name="arg1" type="xs:int"/>
+      <xs:element name="arg2" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="processDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="processLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="processLoginResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

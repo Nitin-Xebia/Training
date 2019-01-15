@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<e:TravelMode xmlns:e="http://example.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://example.org travel.xsd">
+	<e:plane>
+		<origin>BOSTON</origin>
+		<destination>SAN FRANCISCO</destination>
+		<flightNumber>195</flightNumber>
+		<meal>breakfast</meal>
+	</e:plane>
+	<e:auto>
+		<origin>SAN FRANCISCO</origin>
+		<destination>SAN FRANCISCO</destination>
+		<rentalAgency>Hertz</rentalAgency>
+		<ratePerHour>2</ratePerHour>
+	</e:auto>
+	<e:train>
+		<origin>BOSTON</origin>
+		<destination>NEW YORK</destination>
+		<track>9</track>
+		<dailyScheduleNumber>805</dailyScheduleNumber>
+	</e:train>
+	 
+</e:TravelMode>

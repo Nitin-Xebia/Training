@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ 
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+
+<xs:element name="personnel"/>  
+    
+ <xs:element name="User" type="xs:string"/>
+   
+ <xs:element name="Number" type="xs:positiveInteger"/>
+  
+ <xs:element name="Grade" type="xs:decimal"/> 
+  
+ <xs:element name="Success" type="xs:boolean"/> 
+  
+  
+</xs:schema>

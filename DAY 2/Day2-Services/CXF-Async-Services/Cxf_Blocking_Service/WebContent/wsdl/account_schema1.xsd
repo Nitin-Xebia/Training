@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://server.com/" elementFormDefault="unqualified" targetNamespace="http://server.com/" version="1.0">
+<xs:element name="getDetails" type="tns:getDetails"/>
+<xs:element name="getDetailsResponse" type="tns:getDetailsResponse"/>
+<xs:element name="update" type="tns:update"/>
+<xs:element name="updateResponse" type="tns:updateResponse"/>
+<xs:complexType name="update">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="updateResponse">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getDetails">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:double"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getDetailsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

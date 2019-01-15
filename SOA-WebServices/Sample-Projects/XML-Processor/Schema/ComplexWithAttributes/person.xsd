@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="personnel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="person" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>	 
+	</xs:element>
+	<xs:element name="person">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name"/>				 
+			</xs:sequence>
+			<!--xs:attribute name="id" type="xs:string" use="required"/-->
+			<xs:attribute name="id" type="xs:ID" use="required"/>
+			<xs:attribute name="note" type="xs:string" use="prohibited"/>
+			<xs:attribute name="married" type="xs:string" use="optional"/>			
+			<xs:attribute name="employer" default="govt">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="govt"/>
+						<xs:enumeration value="private"/>
+						<xs:enumeration value="public"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			
+			<xs:attribute name="salary" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>	 
+</xs:schema>

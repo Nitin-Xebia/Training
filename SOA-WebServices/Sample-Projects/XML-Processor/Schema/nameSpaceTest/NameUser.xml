@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<User xmlns:b="CurrentSpace"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="UserNameSpace.xsd">
+ <Email_ID>mr.com</Email_ID>	 
+</User>

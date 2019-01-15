@@ -1,0 +1,32 @@
+<!DOCTYPE slideshow SYSTEM "slide2.dtd">  
+ 
+
+ 
+<slideshow 
+    show="Great Tennis Show"
+    date="Date of publication"
+    author="Andre Agassi"
+    >
+
+    <!-- PROCESSING INSTRUCTION -->
+    <?my.presentation.Program QUERY="play, demo, all"?>
+	<!--Parser specific information -->
+	<!--a colon can conflict with namespace declaration-->
+
+    <!-- Title slide without image and item -->
+    <slide type="demo">
+       <title>Wake up to Sampras!</title>
+    </slide>
+
+    <!-- Tennis Overview-->
+    <slide type="all">
+      <title>Tennis Overview</title>
+      <item>
+	      Why the game of 
+		  <item>Tennis </item>
+		   is Great ?
+		 </item>
+      <item/>
+      <item>Who <item>buys</item>Tickets for Wimbeldon ?</item>
+    </slide>
+ </slideshow>

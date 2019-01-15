@@ -1,0 +1,25 @@
+<schema xmlns:mo="MyData" xmlns:no="Data" targetNamespace="MyData" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Java_Presentation\new Server_program_present\XML_code\jaxp\XMLParser\Schema\UserNameSpace.xsd">
+	<element name="purchaseOrder" type="mo:PurchaseOrderType"/>
+	<element name="comment" type="string"/>
+	<element name="User" type="mo:User"/>
+	<complexType name="PurchaseOrderType">
+		<sequence>
+			<element name="shipTo" type="mo:USAddress"/>
+			<element name="billTo" type="mo:USAddress"/>
+			<element ref="mo:comment" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	<complexType name="USAddress">
+		<sequence>
+			<element name="name" type="string"/>
+			<element name="street" type="string"/>
+		</sequence>
+		<attribute name="Country" type="string"/>
+	</complexType>
+	<complexType name="User">
+		<sequence>
+			<element name="FIrst" type="string"/>
+			<element name="Last" type="string"/>
+		</sequence>
+	</complexType>
+</schema>

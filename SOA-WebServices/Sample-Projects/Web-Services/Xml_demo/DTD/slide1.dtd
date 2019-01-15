@@ -1,0 +1,14 @@
+<!--?xml version='1.0' encoding='us-ascii'?-->
+
+<!--
+    DTD for a simple "slide show".
+-->
+
+<!ELEMENT slideshow (slide)+>
+<!ELEMENT slide (title, item*)>
+<!ELEMENT title (#PCDATA)>
+<!--ELEMENT item (#PCDATA)-->
+
+<!ELEMENT item (#PCDATA | item)*>
+
+

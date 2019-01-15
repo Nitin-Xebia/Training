@@ -1,0 +1,33 @@
+DOC: nodeName="#document"
+  DOC_TYPE: nodeName="slideshow"
+  ELEM: nodeName="slideshow" local="slideshow"
+    TEXT: nodeName="#text" nodeValue=[WS]
+    ELEM: nodeName="slide" local="slide"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      ELEM: nodeName="title" local="title"
+        TEXT: nodeName="#text" nodeValue="Overview"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      ELEM: nodeName="item" local="item"
+        TEXT: nodeName="#text" nodeValue="This is xml intro"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      ELEM: nodeName="item" local="item"
+        TEXT: nodeName="#text" nodeValue="XML is defined by IETF"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      ELEM: nodeName="price" local="price"
+        TEXT: nodeName="#text" nodeValue="2223"
+      TEXT: nodeName="#text" nodeValue=[WS]
+    TEXT: nodeName="#text" nodeValue=[WS]
+    ELEM: nodeName="slide" local="slide"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      ELEM: nodeName="title" local="title"
+        TEXT: nodeName="#text" nodeValue="Intro"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      ELEM: nodeName="item" local="item"
+        TEXT: nodeName="#text" nodeValue="This is java intro"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      COMM: nodeName="#comment" nodeValue="<item>XML is defined by IETF</item>"
+      TEXT: nodeName="#text" nodeValue=[WS]
+      ELEM: nodeName="price" local="price"
+        TEXT: nodeName="#text" nodeValue="2444"
+      TEXT: nodeName="#text" nodeValue=[WS]
+    TEXT: nodeName="#text" nodeValue=[WS]

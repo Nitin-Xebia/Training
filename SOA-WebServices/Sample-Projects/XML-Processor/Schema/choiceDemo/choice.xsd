@@ -1,0 +1,18 @@
+ 
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="FooBar"> <!--FooBar is of Complex type-->
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="foo" type="xs:int"/>
+        <xs:choice>
+          <xs:element name="phoneNumber" type="xs:string"/>
+          <xs:element name="speedDial" type="xs:int"/> 
+        </xs:choice>         
+      </xs:sequence>
+      <xs:attribute name="zip" type="xs:string"/> <!--Attribute for FooBar-->
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="AccountService" targetNamespace="http://server.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://server.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://server.com/" version="1.0" xmlns:tns="http://server.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="depositAmount" type="tns:depositAmount"/>
+
+  <xs:element name="depositAmountResponse" type="tns:depositAmountResponse"/>
+
+  <xs:element name="getAccountName" type="tns:getAccountName"/>
+
+  <xs:element name="getAccountNameResponse" type="tns:getAccountNameResponse"/>
+
+  <xs:element name="getBalance" type="tns:getBalance"/>
+
+  <xs:element name="getBalanceResponse" type="tns:getBalanceResponse"/>
+
+  <xs:complexType name="getBalance">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getBalanceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="depositAmount">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="depositAmountResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAccountName">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getAccountNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getBalanceResponse">
+    <wsdl:part name="parameters" element="tns:getBalanceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="depositAmountResponse">
+    <wsdl:part name="parameters" element="tns:depositAmountResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAccountNameResponse">
+    <wsdl:part name="parameters" element="tns:getAccountNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getBalance">
+    <wsdl:part name="parameters" element="tns:getBalance">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="depositAmount">
+    <wsdl:part name="parameters" element="tns:depositAmount">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAccountName">
+    <wsdl:part name="parameters" element="tns:getAccountName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Bank">
+    <wsdl:operation name="getBalance">
+      <wsdl:input name="getBalance" message="tns:getBalance">
+    </wsdl:input>
+      <wsdl:output name="getBalanceResponse" message="tns:getBalanceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="depositAmount">
+      <wsdl:input name="depositAmount" message="tns:depositAmount">
+    </wsdl:input>
+      <wsdl:output name="depositAmountResponse" message="tns:depositAmountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountName">
+      <wsdl:input name="getAccountName" message="tns:getAccountName">
+    </wsdl:input>
+      <wsdl:output name="getAccountNameResponse" message="tns:getAccountNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AccountServiceSoapBinding" type="tns:Bank">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBalance">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getBalance">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBalanceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="depositAmount">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="depositAmount">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="depositAmountResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccountName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAccountName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAccountNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AccountService">
+    <wsdl:port name="AccountPort" binding="tns:AccountServiceSoapBinding">
+      <soap:address location="http://localhost:8080/CxfService/services/AccountPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

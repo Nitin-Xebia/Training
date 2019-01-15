@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!DOCTYPE Factory SYSTEM "factory.dtd" [
+  <!ENTITY product  "MatchBox">
+  <!ENTITY vehicle "Metador">
+  <!ENTITY cars "Marutis">
+  <!ENTITY CopyRight SYSTEM "copyright.xml">
+
+]> 
+<!--The entities declared above are general entities-->
+
+   <Factory title="&product; Manufacturing">
+
+    <Unit type = "Production"> 
+      <title>Start Production for 100 &product;!</title>
+      <training>How to make the &product;</training> 	  
+	  </Unit>   
+      <UnitBreak/>
+
+    <Unit type="Marketing">
+        <title> Marketing</title> 
+        <caption>Who will buy the &product; ?</caption> 
+		<Paragraph>
+		  First make the Brouchure for &product;
+		  <Line>Then visit the prospective buyers</Line> 
+		  <!--slogan>Follow up with the Letters</slogan--> 
+		  <Word>Say Thank You to the Customers!</Word> 
+          &CopyRight;
+		</Paragraph>
+    </Unit>
+     <UnitBreak/>
+	 <!--UnitBreak></UnitBreak-->
+
+
+   <Unit type="Dispatch">
+        <title>Forwarding</title> 
+        <Transport>Which &vehicle; will be used ?</Transport> 
+    </Unit>
+	<UnitBreak/>
+</Factory>
+
+<!--Validate with Parser nad run with EchoParser to disply the contents and see the product and vehicle replacements-->

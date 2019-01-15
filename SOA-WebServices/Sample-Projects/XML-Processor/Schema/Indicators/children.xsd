@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.myData.com"
+xmlns="http://www.CurrentSpec.com"
+elementFormDefault="qualified"><xs:element name="children">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="childname" type="xs:string"
+      maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element></xs:schema>
+
+<!--
+we can extend the "person" element with a "children" element.
+even if the author of the schema above never declared any "children" element
+-->
+

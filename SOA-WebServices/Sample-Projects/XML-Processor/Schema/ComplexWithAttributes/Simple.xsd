@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Root">
+		<xs:annotation>
+			<xs:documentation>This is my xsd for Root</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="data" type="xs:int" maxOccurs="unbounded"/>
+				<xs:element name="Name"/>
+			</xs:sequence>
+			<xs:attribute name="age" type="xs:int" use="optional" default="11"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

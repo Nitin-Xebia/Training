@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns me="MyData"  xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Group">
+		<xs:annotation>
+			<xs:documentation>This is Group root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element name="Male"/>
+				<xs:element name="Female"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	 
+</xs:schema>

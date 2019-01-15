@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="AccountService" targetNamespace="http://server.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://server.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://server.com/" schemaLocation="account_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getName">
+    <wsdl:part name="parameters" element="tns:getName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getNameResponse">
+    <wsdl:part name="parameters" element="tns:getNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processDataResponse">
+    <wsdl:part name="parameters" element="tns:processDataResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processData">
+    <wsdl:part name="parameters" element="tns:processData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Account">
+    <wsdl:operation name="processData">
+      <wsdl:input name="processData" message="tns:processData">
+    </wsdl:input>
+      <wsdl:output name="processDataResponse" message="tns:processDataResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input name="update" message="tns:update">
+    </wsdl:input>
+      <wsdl:output name="updateResponse" message="tns:updateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <wsdl:input name="getName" message="tns:getName">
+    </wsdl:input>
+      <wsdl:output name="getNameResponse" message="tns:getNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AccountServiceSoapBinding" type="tns:Account">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="processData">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="processData">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="processDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="update">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AccountService">
+    <wsdl:port name="AccountPort" binding="tns:AccountServiceSoapBinding">
+      <soap:address location="http://localhost:8080/Cxf_Basic_Authetication/services/AccountPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

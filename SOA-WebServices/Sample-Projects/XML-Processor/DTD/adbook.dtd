@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT addressBook (person)+>
+<!ELEMENT person (name,email)*>
+<!ELEMENT name (family,given)>
+<!ELEMENT family (#PCDATA)>
+<!ELEMENT given (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

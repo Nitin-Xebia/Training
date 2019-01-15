@@ -1,0 +1,4 @@
+wsdl2java -p com.server -b async_binding.xml http://localhost:8080/CXF_AsyncClientService/services/AccountPort?wsdl
+wsdl2java -p com.server -b async_binding.xml account.wsdl
+
+

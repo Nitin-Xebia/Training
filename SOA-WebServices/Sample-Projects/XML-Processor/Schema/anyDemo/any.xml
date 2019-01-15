@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Types xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="any.xsd">
+	<DataType>
+	   <Data>myData</Data>
+	</DataType>
+	
+    <DataType>
+      <Number>3</Number>
+      <Data>NotYet</Data>
+	</DataType>
+	
+	<DataType>
+	 <Variable>MySpace</Variable>
+	 <DataType></DataType>
+	</DataType>
+</Types>
